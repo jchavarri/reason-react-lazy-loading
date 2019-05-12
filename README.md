@@ -2,6 +2,8 @@
 
 Example project to show how to use components lazy loading in ReasonReact.
 
+Reason / BuckleScript adaptation from https://medium.freecodecamp.org/how-to-use-react-lazy-and-suspense-for-components-lazy-loading-8d420ecac58.
+
 ## Run Project
 
 ```sh

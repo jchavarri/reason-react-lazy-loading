@@ -31,6 +31,10 @@ let make = () => {
     <button onClick={_ => dispatch(Clicked)}>
       "Generate PDF"->React.string
     </button>
-    {state.showPDFPreview ? <PdfPreview title=greeting /> : React.null}
+    {state.showPDFPreview
+       ? <React.Suspense fallback={<div> "Loading..."->React.string </div>}>
+           <PdfPreviewLazy title=greeting />
+         </React.Suspense>
+       : React.null}
   </div>;
 };
