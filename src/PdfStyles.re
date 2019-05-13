@@ -1,5 +1,5 @@
 let styles =
-  Bindings.StyleSheet.(
+  BsPdfViewer.StyleSheet.(
     make->create({
       "viewer": {
         "padding": 0,

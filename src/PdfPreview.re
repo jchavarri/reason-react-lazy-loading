@@ -1,4 +1,4 @@
-open Bindings;
+open BsPdfViewer;
 
 // Create Document Component
 [@react.component]
@@ -15,3 +15,5 @@ let make = (~title) =>
       </Page>
     </Document>
   </PDFViewer>;
+
+let default = make;
