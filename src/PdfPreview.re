@@ -15,3 +15,5 @@ let make = (~title) =>
       </Page>
     </Document>
   </PDFViewer>;
+
+let default = make;
