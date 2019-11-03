@@ -1,7 +1,7 @@
 module StyleSheet = {
   type t;
   [@bs.module "@react-pdf/renderer"] external make: t = "StyleSheet";
-  [@bs.send] external create: (t, Js.t('a)) => Js.t('a) = "";
+  [@bs.send] external create: (t, Js.t('a)) => Js.t('a) = "create";
 };
 
 module PDFViewer = {
