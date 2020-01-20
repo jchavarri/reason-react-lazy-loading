@@ -4,7 +4,7 @@ module type T = (module type of PdfPreview);
   Needed for BuckleScript to not import the original component:
   See https://github.com/BuckleScript/bucklescript/issues/3543
  */
-[@bs.val] external unsafePlaceholder: (module T) = "undefined";
+let unsafePlaceholder: module T = [%raw {|{}|}];
 
 /* By leveraging the shallow `unsafePlaceholder` definition above,
    we can use PdfPreview types without requiring the PdfPreview.bs.js file */
