@@ -33,7 +33,7 @@ let make = () => {
     </button>
     {state.showPDFPreview
        ? <React.Suspense fallback={<div> "Loading..."->React.string </div>}>
-           <PdfPreviewLazy.Lazy title=greeting />
+           <PdfPreviewLazy title=greeting />
          </React.Suspense>
        : React.null}
   </div>;
